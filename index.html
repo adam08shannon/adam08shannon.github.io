@@ -7,9 +7,41 @@
         *{
             background-color: #D8E9FA;
         }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 22%;
+            grid-template-rows: auto auto auto auto auto auto;
+            gap: 1%;
+        }
+
+        .heading{
+            grid-row: 1;
+            text-align:center;
+            grid-column: 1 / span 4;
+            border: solid;
+            border-radius: 12px;
+        }
+
+        .nav-list{
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        .nav-list > li{
+            float: left;
+            display: block;
+            padding: 8px;
+        }
     </style>
 </head>
-<body>
-
+<body class="grid-container">
+    <section class="heading">
+        <ul class="nav-list">
+            <li>About Me</li>
+            <li>Articles</li>
+            <li>Contact Me</li>
+        </ul>
+    </section>
 </body>
 </html>
