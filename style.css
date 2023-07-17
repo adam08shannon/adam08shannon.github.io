@@ -1,0 +1,43 @@
+*{
+    background-color: #D8E9FA;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 22%;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 1%;
+}
+
+.heading{
+    grid-row: 1;
+    text-align:center;
+    grid-column: 1 / span 4;
+    border: solid;
+    border-radius: 12px;
+}
+
+.nav-list{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav-list > li{
+    float: left;
+    display: block;
+    padding: 8px;
+}
+
+section > div{
+    padding-left: 1%;
+    border: solid;
+    border-radius: 12px;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+.main-info{
+    grid-column: 1 / 4;
+}
