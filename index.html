@@ -33,6 +33,20 @@
             display: block;
             padding: 8px;
         }
+
+        section > div{
+            padding-left: 1%;
+            border: solid;
+            border-radius: 12px;
+        }
+
+        h2{
+            text-decoration: underline;
+        }
+
+        .main-info{
+            grid-column: 1 / 4;
+        }
     </style>
 </head>
 <body class="grid-container">
@@ -42,6 +56,23 @@
             <li>Articles</li>
             <li>Contact Me</li>
         </ul>
+    </section>
+
+    <section class="main-info">
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Name: Adam Shannon</p>
+            <p>Age: 20</p>
+            <p>
+                Professional Interests: I would consider myself more of a backend developer than a UI designer,
+                however, I have experience with both. I am mainly interested in Software Architecture, as well
+                as the challenges of managing a team following agile processes.
+            </p>
+            <p>
+                Hobbies: I am an avid rugby fan, I play at a club in Wales and will watch any and all matches
+                especially if Ulster or Ireland are playing. I also enjoy reading and any form of crime series.
+            </p>
+        </div>
     </section>
 </body>
 </html>
